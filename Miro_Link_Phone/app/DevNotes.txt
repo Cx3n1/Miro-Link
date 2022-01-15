@@ -1,0 +1,8 @@
+Known bugs
+#1: if ip and port is inputted so that they connect to something but not the server
+    connection button changes to Waiting and gets disabled as usual but sometimes
+    error message doesn't display and button doesn't return to enabled mode so
+    user is forced to restart the app
+
+    solution: idk (aka working progress) still unable to figure out why sometimes it works fine
+    but sometimes not :p

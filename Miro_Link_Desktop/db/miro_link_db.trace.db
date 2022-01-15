@@ -1,0 +1,1059 @@
+2022-01-14 18:33:15 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at miro.link.MiroLink.main(MiroLink.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 29 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 23 more
+2022-01-14 18:33:55 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at miro.link.MiroLink.main(MiroLink.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 29 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 23 more
+2022-01-14 18:34:09 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at miro.link.MiroLink.main(MiroLink.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 29 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 23 more
+2022-01-14 18:53:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT, MIRO-[*]LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL)"; expected "IDENTITY, BIGSERIAL, SERIAL, data type"; SQL statement:
+CREATE TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT, MIRO-LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL) [42001-206]
+2022-01-14 18:54:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT, MIRO-[*]LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL HOUR TO SECOND)"; expected "IDENTITY, BIGSERIAL, SERIAL, data type"; SQL statement:
+CREATE TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT, MIRO-LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL HOUR TO SECOND) [42001-206]
+2022-01-14 18:57:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE MIRO_LINK_USAGE_TABLE\000d\000a([*]USER_ID INT AUTO_INCREMENT PRIMARY KEY, LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL HOUR TO SECOND)"; expected "{, ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE MIRO_LINK_USAGE_TABLE
+(USER_ID INT AUTO_INCREMENT PRIMARY KEY, LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL HOUR TO SECOND) [42001-206]
+2022-01-14 18:57:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MIRO_LINK_USAGE_TABLE" already exists; SQL statement:
+CREATE TABLE MIRO_LINK_USAGE_TABLE
+(USER_ID INT AUTO_INCREMENT PRIMARY KEY, LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL HOUR TO SECOND) [42101-206]
+2022-01-14 18:58:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE TABLE[*] MIRO_LINK_USAGE_TABLE\000d\000aCREATE TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT AUTO_INCREMENT PRIMARY KEY, LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL HOUR TO SECOND)"; expected "identifier"; SQL statement:
+DELETE TABLE MIRO_LINK_USAGE_TABLE
+CREATE TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT AUTO_INCREMENT PRIMARY KEY, LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL HOUR TO SECOND) [42001-206]
+2022-01-14 18:58:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE MIRO_LINK_USAGE_TABLE\000d\000aCREATE[*] TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT AUTO_INCREMENT PRIMARY KEY, LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL HOUR TO SECOND)"; SQL statement:
+DROP TABLE MIRO_LINK_USAGE_TABLE
+CREATE TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT AUTO_INCREMENT PRIMARY KEY, LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL HOUR TO SECOND) [42000-206]
+2022-01-14 19:01:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE MIRO_LINK_USAGE_TABLE\000d\000aCREATE[*] TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT AUTO_INCREMENT PRIMARY KEY, LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL DAY TO SECOND)"; SQL statement:
+DROP TABLE MIRO_LINK_USAGE_TABLE
+CREATE TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT AUTO_INCREMENT PRIMARY KEY, LINK_USAGES INT, TOTAL_MIRRORING_DURATION INTERVAL DAY TO SECOND) [42000-206]
+2022-01-14 19:05:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * MIRO_LINK_USAGE_TABLE[*]"; SQL statement:
+SELECT * MIRO_LINK_USAGE_TABLE [42000-206]
+2022-01-14 19:20:21 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.MiroLink.main(MiroLink.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 27 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 21 more
+2022-01-14 19:22:08 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.MiroLink.main(MiroLink.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:465)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:364)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:1071)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 27 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 21 more
+2022-01-14 19:23:59 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:287)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.test(WebApp.java:968)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 16 more
+2022-01-15 13:02:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+ [90002-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.message.DbException.get(DbException.java:192)
+	at org.h2.command.Prepared.query(Prepared.java:230)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:255)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:99)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getUserUsage(MiroLinkUsageRepository.java:84)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getUserUsage(MiroLinkUsageRepository.java:72)
+	at miro.link.db.repositories.MiroLinkUsageRepository.fetchUserDataCreateIfNone(MiroLinkUsageRepository.java:26)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:21)
+2022-01-15 13:02:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+ [90002-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.message.DbException.get(DbException.java:192)
+	at org.h2.command.Prepared.query(Prepared.java:230)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:255)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:99)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getUserUsage(MiroLinkUsageRepository.java:84)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getUserUsage(MiroLinkUsageRepository.java:72)
+	at miro.link.db.repositories.MiroLinkUsageRepository.fetchUserDataCreateIfNone(MiroLinkUsageRepository.java:26)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:21)
+2022-01-15 13:04:23 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:287)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.test(WebApp.java:968)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 16 more
+2022-01-15 13:05:53 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:126)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getUserUsage(MiroLinkUsageRepository.java:77)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getUserUsage(MiroLinkUsageRepository.java:72)
+	at miro.link.db.repositories.MiroLinkUsageRepository.fetchUserDataCreateIfNone(MiroLinkUsageRepository.java:26)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:21)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 20 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 14 more
+2022-01-15 13:05:54 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:126)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getAll(MiroLinkUsageRepository.java:47)
+	at miro.link.db.repositories.MiroLinkUsageRepository.main(MiroLinkUsageRepository.java:105)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 13:06:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+ [90002-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.message.DbException.get(DbException.java:192)
+	at org.h2.command.Prepared.query(Prepared.java:230)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:255)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:99)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getUserUsage(MiroLinkUsageRepository.java:84)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getUserUsage(MiroLinkUsageRepository.java:72)
+	at miro.link.db.repositories.MiroLinkUsageRepository.fetchUserDataCreateIfNone(MiroLinkUsageRepository.java:26)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:21)
+2022-01-15 13:06:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+ [90002-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.message.DbException.get(DbException.java:192)
+	at org.h2.command.Prepared.query(Prepared.java:230)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:255)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:99)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getUserUsage(MiroLinkUsageRepository.java:84)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getUserUsage(MiroLinkUsageRepository.java:72)
+	at miro.link.db.repositories.MiroLinkUsageRepository.fetchUserDataCreateIfNone(MiroLinkUsageRepository.java:26)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:21)
+2022-01-15 13:07:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "TEST[*]"; expected "TRUNCATE"; SQL statement:
+test [42001-206]
+2022-01-15 13:08:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "TEST[*]"; expected "TRUNCATE"; SQL statement:
+test [42001-206]
+2022-01-15 14:14:30 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.createTableIfItsNotInDatabase(MiroLinkUsageRepository.java:27)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:19)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 14:14:30 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getAll(MiroLinkUsageRepository.java:85)
+	at miro.link.db.repositories.MiroLinkUsageRepository.main(MiroLinkUsageRepository.java:154)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 14:14:30 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.createNewUserInDatabaseAndReturnIt(MiroLinkUsageRepository.java:48)
+	at miro.link.db.repositories.MiroLinkUsageRepository.main(MiroLinkUsageRepository.java:155)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 14:14:48 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.createTableIfItsNotInDatabase(MiroLinkUsageRepository.java:27)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:19)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 14:14:48 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getAll(MiroLinkUsageRepository.java:85)
+	at miro.link.db.repositories.MiroLinkUsageRepository.main(MiroLinkUsageRepository.java:154)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 14:14:48 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.createNewUserInDatabaseAndReturnIt(MiroLinkUsageRepository.java:48)
+	at miro.link.db.repositories.MiroLinkUsageRepository.main(MiroLinkUsageRepository.java:155)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 14:15:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MIRO_LINK_USAGE_TABLE" already exists; SQL statement:
+CREATE TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT PRIMARY KEY, MIRO_LINK_USAGES INT NOT NULL, TOTAL_MIRRORING_DURATION BIGINT NOT NULL); [42101-206]
+2022-01-15 14:16:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE IF[*] NOT EXISTS TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT PRIMARY KEY, MIRO_LINK_USAGES INT NOT NULL, TOTAL_MIRRORING_DURATION BIGINT NOT NULL);"; expected "OR, FORCE, VIEW, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, DATATYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL, GLOBAL, TEMP, TEMPORARY, TABLE, SYNONYM, UNIQUE, HASH, SPATIAL, INDEX"; SQL statement:
+CREATE IF NOT EXISTS TABLE MIRO_LINK_USAGE_TABLE(USER_ID INT PRIMARY KEY, MIRO_LINK_USAGES INT NOT NULL, TOTAL_MIRRORING_DURATION BIGINT NOT NULL); [42001-206]
+2022-01-15 14:20:03 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.createTableIfItsNotInDatabase(MiroLinkUsageRepository.java:27)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:19)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 14:20:03 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.createNewUserInDatabaseAndReturnIt(MiroLinkUsageRepository.java:48)
+	at miro.link.db.repositories.MiroLinkUsageRepository.main(MiroLinkUsageRepository.java:156)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 14:20:03 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getAll(MiroLinkUsageRepository.java:87)
+	at miro.link.db.repositories.MiroLinkUsageRepository.main(MiroLinkUsageRepository.java:157)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 14:34:01 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.createTableIfItsNotInDatabase(MiroLinkUsageRepository.java:39)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:21)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 14:34:01 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.userIsInDatabase(MiroLinkUsageRepository.java:130)
+	at miro.link.db.repositories.MiroLinkUsageRepository.userIsInDatabase(MiroLinkUsageRepository.java:126)
+	at miro.link.db.repositories.MiroLinkUsageRepository.fetchUserDataCreateIfNone(MiroLinkUsageRepository.java:29)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:23)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 20 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 14 more
+2022-01-15 14:34:01 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.createNewUserInDatabaseAndReturnIt(MiroLinkUsageRepository.java:49)
+	at miro.link.db.repositories.MiroLinkUsageRepository.fetchUserDataCreateIfNone(MiroLinkUsageRepository.java:32)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:23)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 19 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 13 more
+2022-01-15 14:34:01 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.createNewUserInDatabaseAndReturnIt(MiroLinkUsageRepository.java:49)
+	at miro.link.db.repositories.MiroLinkUsageRepository.main(MiroLinkUsageRepository.java:177)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 14:34:01 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getAll(MiroLinkUsageRepository.java:74)
+	at miro.link.db.repositories.MiroLinkUsageRepository.main(MiroLinkUsageRepository.java:178)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 14:34:10 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: This method is not allowed for a prepared statement; use a regular statement instead. [90130-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.message.DbException.get(DbException.java:192)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:303)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getUserUsage(MiroLinkUsageRepository.java:111)
+	at miro.link.db.repositories.MiroLinkUsageRepository.getUserUsage(MiroLinkUsageRepository.java:99)
+	at miro.link.db.repositories.MiroLinkUsageRepository.fetchUserDataCreateIfNone(MiroLinkUsageRepository.java:30)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:23)
+2022-01-15 15:24:17 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-206]
+2022-01-15 15:25:15 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:287)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.test(WebApp.java:968)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 16 more
+2022-01-15 15:28:59 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.createTableIfItsNotInDatabase(MiroLinkUsageRepository.java:30)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:22)
+	at miro.link.runnables.DatabaseUpdaterRunnable.run(DatabaseUpdaterRunnable.java:21)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 20 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 14 more
+2022-01-15 15:28:59 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.userIsInDatabase(MiroLinkUsageRepository.java:174)
+	at miro.link.db.repositories.MiroLinkUsageRepository.userIsInDatabase(MiroLinkUsageRepository.java:171)
+	at miro.link.db.repositories.MiroLinkUsageRepository.fetchUserDataCreateIfNone(MiroLinkUsageRepository.java:42)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:24)
+	at miro.link.runnables.DatabaseUpdaterRunnable.run(DatabaseUpdaterRunnable.java:21)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 16 more
+2022-01-15 15:28:59 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.getConnection(DatabaseManager.java:131)
+	at miro.link.db.repositories.MiroLinkUsageRepository.createNewUserInDatabaseAndReturnIt(MiroLinkUsageRepository.java:50)
+	at miro.link.db.repositories.MiroLinkUsageRepository.fetchUserDataCreateIfNone(MiroLinkUsageRepository.java:45)
+	at miro.link.db.repositories.MiroLinkUsageRepository.<clinit>(MiroLinkUsageRepository.java:24)
+	at miro.link.runnables.DatabaseUpdaterRunnable.run(DatabaseUpdaterRunnable.java:21)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 21 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 15 more
+2022-01-15 15:36:13 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-206]
+2022-01-15 15:47:44 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.initialiseDataSource(DatabaseManager.java:125)
+	at miro.link.db.DatabaseManager.initialize(DatabaseManager.java:54)
+	at miro.link.db.DatabaseManager.main(DatabaseManager.java:178)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 15:47:58 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.message.DbException.convert(DbException.java:414)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:120)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3292)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:585)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:461)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.jdbcx.JdbcDataSource.getConnection(JdbcDataSource.java:155)
+	at miro.link.db.DatabaseManager.initialiseDataSource(DatabaseManager.java:125)
+	at miro.link.db.DatabaseManager.initialize(DatabaseManager.java:54)
+	at miro.link.db.DatabaseManager.main(DatabaseManager.java:178)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]" [50000-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: D:/OneDrives/OneDrive - ens.tsu.edu.ge/Java/MavenProjectFiles/Important/semester_ending_project_development/Miro_Link/db/miro_link_db.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	... 12 more
+2022-01-15 15:50:31 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-206]
+2022-01-15 15:57:32 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-206]
+2022-01-15 15:58:24 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-206]
+2022-01-15 15:58:33 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-206]
+2022-01-15 15:58:46 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-206]
+2022-01-15 15:59:42 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-206]
+2022-01-15 16:01:10 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-206]
+2022-01-15 16:01:10 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-206]
+2022-01-15 16:03:40 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-206]
+2022-01-15 16:18:57 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-206]

@@ -1,0 +1,168 @@
+
+ class Client implements Runnable {
+
+        private int port;
+        private String host;
+        private Bitmap gottenImage;
+
+        public Client(String host, int port) {
+            this.host = host;
+            this.port = port;
+        }
+
+
+       /* @Override
+        public void run() {
+            try {
+                //establishing connection
+                Socket socket = new Socket(host, port);
+                if (!socket.isConnected()) return;
+
+                //getting incoming stream
+                DataInputStream incomingStream = new DataInputStream(socket.getInputStream());
+
+                //needed variables
+                int compressedLength;
+                int decompressedLength;
+
+                byte[] image;
+                byte[] compressedArray;
+
+                for (int i = 0; i < 100; i++) {
+                    //getting lengths
+                    decompressedLength = incomingStream.readInt();
+                    compressedLength = incomingStream.readInt();
+
+                    //reading compressed array
+                    compressedArray = new byte[compressedLength];
+                    incomingStream.readFully(compressedArray, 0, compressedLength);
+
+                    //decompressing array
+                    image = Decompressor.fastDecompress(compressedArray, decompressedLength);
+
+                    //decoding array
+                    gottenImage = BitmapFactory.decodeByteArray(image, 0, image.length);
+
+                    //displaying image
+                    runOnUiThread(() -> setImage(gottenImage));
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }*/
+
+
+    public void setDisplay(Bitmap gottenImage) {
+        FullscreenActivity.displayImage = gottenImage;
+    }
+
+    @Override
+    public void run() {
+        try {
+            Socket socket = new Socket(host, port);
+            if (!socket.isConnected()) return;
+
+            runOnUiThread(MainActivity.this::displayFullscreenActivity);
+
+            long start;
+            long readStream;
+            List<Long> readStreamL = new ArrayList<>();
+
+            long readFully;
+            List<Long> readFullyL = new ArrayList<>();
+
+            long decompress;
+            List<Long> decompressL = new ArrayList<>();
+
+            long convertToBitmap;
+            List<Long> convertToL = new ArrayList<>();
+
+            long end;
+            List<Long> endL = new ArrayList<>();
+
+            DataInputStream incomingStream = new DataInputStream(socket.getInputStream());
+            long startOfAll = System.currentTimeMillis();
+
+            byte[] compressedArray;
+            byte[] image;
+
+            for (int i = 0; i < 100; i++) {
+                start = System.currentTimeMillis();
+
+                int fullLength = incomingStream.readInt();
+                int compressedLength = incomingStream.readInt();
+
+                readStream = System.currentTimeMillis();
+
+                compressedArray = new byte[compressedLength];
+
+                //compressedArray = readFully(incomingStream);
+                incomingStream.readFully(compressedArray, 0, compressedLength);
+                if(compressedArray.length == 0) continue;
+
+                readFully = System.currentTimeMillis();
+
+                //image = Decompressor.decompress(compressedArray);
+
+                image = Decompressor.fastDecompress(compressedArray, fullLength);
+
+
+                decompress = System.currentTimeMillis();
+
+                gottenImage = BitmapFactory.decodeByteArray(image, 0, image.length);
+
+                convertToBitmap = System.currentTimeMillis();
+
+                runOnUiThread(() -> setDisplay(gottenImage));
+
+
+                end = System.currentTimeMillis();
+
+                readStreamL.add(readStream-start);
+                readFullyL.add(readFully-readStream);
+                decompressL.add(decompress-readFully);
+                convertToL.add(convertToBitmap-decompress);
+                endL.add(end - convertToBitmap);
+            }
+            long endOfAll = System.currentTimeMillis();
+
+
+            System.out.println("TotalTime: " + (endOfAll - startOfAll)/1000.0 + "s");
+            System.out.println("reading int: " + average(readStreamL)/1000 + "s");
+            System.out.println("read full bytes: " + average(readFullyL)/1000 + "s");
+            System.out.println("decompress: " + average(decompressL)/1000 + "s");
+            System.out.println("converting to bitmap: " + average(convertToL)/1000 + "s");
+            System.out.println("posting:  " + average(endL)/1000 + "s");
+
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private byte[] readFully(DataInputStream dis) throws IOException {
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        byte[] buffer = new byte[131_071];
+        int count;
+
+        while (dis.available() > 0){
+            count = dis.read(buffer);
+            outputStream.write(buffer, 0, count);
+        }
+        outputStream.close();
+        return outputStream.toByteArray();
+    }
+
+
+
+    public double average(List<Long> list){
+        double retVal = 0;
+        for (Long val : list) {
+            retVal += val;
+        }
+        return retVal/list.size();
+    }
+
+}
